@@ -1,19 +1,34 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+* {
+  font-family: "Gabarito", serif;
+  font-optical-sizing: auto;
+  // font-weight: <weight>;
+  font-style: normal;
+}
+
 $primary: #a0c52a;
 $secondary: #597e2e;
 $tertiary: #faf8f5;
 
-.primary{
-    background-color: $primary;
+.primary {
+  background-color: $primary;
 }
 
-.secondary{
-    background-color: $secondary;
+.secondary {
+  background-color: $secondary;
 }
 
-.tertiary{
-    background-color: $tertiary;
+.tertiary {
+  background-color: $tertiary;
 }
 h1 {
   background-color: blue;
@@ -109,7 +124,7 @@ h1 {
 .footer-container {
   background-color: $secondary;
   .foot {
-    height: 18rem;
+    height: fit-content;
   }
 }
 
@@ -122,10 +137,9 @@ h1 {
   //background-color: aquamarine;
   background-size: 100% 100%;
 
-  @media (min-width: 375px) and (max-width: 414px){
+  @media (min-width: 375px) and (max-width: 414px) {
     margin-left: 20px;
     width: 90%;
-   
   }
 
   @media (min-width: 667px) and (max-width: 768px) {
@@ -182,32 +196,49 @@ h1 {
   }
 }
 
+// Container
+.cont {
+  background-color: darken($tertiary, 3%);
+  @media (min-width: 375px) and (max-width: 414px) {
+    height: 120rem;
+  }
 
+  @media (min-width: 667px) and (max-width: 768px) {
+    height: 110rem;
+  }
+}
 //Reliance
-.rel-row{
-    //height: 60vh;
-   .col{
+.rel-row {
+  height: 60vh;
+  margin-bottom: 300px;
+  .col {
     //background-color: $secondary;
     font-size: 14px;
 
-    h5{
-        text-align: center;
-        text-transform: uppercase;
-        margin-top: 20px;
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 20px;
     }
-   } 
+  }
 
-   .div2{
-    background-image:url(./images/hen117.jpg);
+  .div2 {
+    background-image: url(./images/hen117.jpg);
     background-position: cover;
     background-repeat: no-repeat;
-    background-size:100% 100%;
-   }
+    background-size: 100% 100%;
+  }
 
-   @media (min-width: 375px) and (max-width: 414px){
-    height: 10vh;
-    .col{
+  @media (min-width: 375px) and (max-width: 414px) {
+    height: 40vh;
+    margin-bottom: 20rem;
+
+    .col {
       font-size: 10px;
     }
-   }
+  }
+
+  @media (min-width: 667px) and (max-width: 768px) {
+    height: 30vh;
+  }
 }

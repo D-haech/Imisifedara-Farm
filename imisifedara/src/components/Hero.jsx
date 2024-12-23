@@ -78,7 +78,7 @@ export function Footer() {
   return (
     <>
       <Container fluid className="footer-container text-white">
-        <Row className="pt-4 mt-3">
+        <Row className="pt-4">
           <Col className=" foot">
             <h5 className="fw-bold"> CONTACT US</h5>
             <p>
@@ -114,7 +114,7 @@ export const Description = ({ bgPic, btnText }) => {
         <button
           variant="light"
           size="lg"
-          className="position-absolute p-3 border border-light"
+          className="position-absolute p-3 border border-light tertiary"
           style={{ bottom: `20px`, left: `25%` }}
         >
           {btnText}
@@ -127,8 +127,8 @@ export const Description = ({ bgPic, btnText }) => {
 export function Reliance() {
   return (
     <>
-      <Container fluid>
-        <Row className="rel-row">
+      <div>
+        <Row className="rel-row m-3">
           <Col className="col tertiary">
           <div>
             <h5>Embrace Self Reliance</h5>
@@ -147,7 +147,7 @@ export function Reliance() {
           </Col>
           <Col className="col div2"></Col>
         </Row>
-      </Container>
+      </div>
     </>
   );
 }
