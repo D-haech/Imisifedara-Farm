@@ -3,13 +3,15 @@ import Hero, { Display, Reliance, Description } from "../components/Hero";
 import pig from "../assets/images/pig116.jpg";
 import fish from "../assets/images/images/fish.png";
 import pig2 from "../assets/images/images/pig112.jpg";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 //import { Description } from "@radix-ui/react-dialog";
 
 const Home = () => {
+const getRef = useRef(0)
+  
   useEffect(() => {
     document.title = `Imisifedara`;
-  }, []);
+  }, [getRef.current]);
   return (
     <div className="cont">
       <div className="row">
