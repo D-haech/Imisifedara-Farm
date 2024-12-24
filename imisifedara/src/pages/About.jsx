@@ -61,7 +61,7 @@ const About = () => {
       </div>
       <div className="md:flex gap-x-10 mt-10">
         <div className="basis-1/3">
-          <h3 className="text-center mb-6">OUR HISTORY</h3>
+          <h3 className="text-center mb-6 text-[#597e2e]">OUR HISTORY</h3>
           <p>
             Imisifedara Farm is a family-owned business with roots stretching
             back to 2019. Founded by [Founder's Name], our farm has been a
@@ -72,42 +72,42 @@ const About = () => {
           </p>
         </div>
         <div className="basis-1/3">
-          <h3 className="text-center mb-6">OUR MISSION/VISION</h3>
+          <h3 className="text-center mb-6 text-[#597e2e]">OUR MISSION/VISION</h3>
           <p>
             Our mission at Imisifedara Farm is to provide our customers with the
             finest, naturally raised poultry products. We strive to:
           </p>
-          <ol type="i">
+          <ol type="i" className='list-decimal'>
             <li>
-              Source Quality: We prioritize the health and well-being of our animals, 
+              <strong>Source Quality:</strong> We prioritize the health and well-being of our animals, 
               ensuring they are raised in stress-free environments and fed a nutritious diet.
             </li><br />
             <li>
-              Sustain the Earth: We are committed to sustainable farming practices that 
+              <strong>Sustain the Earth:</strong> We are committed to sustainable farming practices that 
               minimize our environmental impact and preserve natural resources
             </li><br />
             <li>
-              Nourish Our Community: We believe in providing wholesome, nutritious 
+              <strong>Nourish Our Community:</strong> We believe in providing wholesome, nutritious 
               food that contributes to the health and well-being of our community.
             </li><br />
           </ol>
         </div>
         <div className="basis-1/3">
-          <h3 className="text-center mb-6">OUR VALUES</h3>
-          <ol type="A">
+          <h3 className="text-center mb-6 text-[#597e2e]">OUR VALUES</h3>
+          <ol type="A" className='list-decimal'>
             <li>
-              QUALITY: We are dedicated to producing the highest quality poultry products, 
+              <strong>QUALITY:</strong> We are dedicated to producing the highest quality poultry products, 
               free from artificial additives and hormones.
             </li><br />
             <li>
-              INTEGRITY: We conduct our business with honesty, transparency, and fairness.
+              <strong>INTEGRITY:</strong> We conduct our business with honesty, transparency, and fairness.
             </li><br />
             <li>
-              SUSTAINABILITY: We are committed to environmentally responsible practices that 
+              <strong>SUSTAINABILITY:</strong> We are committed to environmentally responsible practices that 
               protect our planet for future generations.
             </li><br />
             <li>
-              COMMUNITY: We are proud to be part of our local community and strive to make a positive impact
+              <strong>COMMUNITY:</strong> We are proud to be part of our local community and strive to make a positive impact
             </li><br />
             
           </ol>
