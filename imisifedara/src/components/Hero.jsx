@@ -5,6 +5,7 @@ import image1 from "../assets/images/array.jpg";
 //import image2 from "../images/OTS.jpg";
 import Carousel from "react-bootstrap/Carousel";
 import { Button, Image } from "react-bootstrap";
+//import { Link } from "react-router-dom";
 
 import farm from "../assets/images/Farm.jpeg";
 
@@ -56,7 +57,7 @@ function Hero() {
   );
 }
 
-export const Display = ({image, heading, detail}) => {
+export const Display = ({ image, heading, detail }) => {
   return (
     <>
       <div className="p-3 dis-div m-3">
@@ -65,9 +66,7 @@ export const Display = ({image, heading, detail}) => {
         </div>
         <div className=" dis-div1 text-center">
           <h2>{heading}</h2>
-          <p>
-            {detail}
-          </p>
+          <p>{detail}</p>
         </div>
       </div>
     </>
@@ -82,7 +81,18 @@ export function Footer() {
           <Col className=" foot">
             <h5 className="fw-bold"> CONTACT US</h5>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint?
+              <i className="bi bi-envelope-at-fill"></i>
+              <a href="#" className="text-white text-decoration-none link-opacity-75-hover">
+                {" "}
+                Email: imisifedarafarms@gmail.com <br />
+              </a>
+              <i className="bi bi-facebook"></i>{" "}
+              <a href="#" className="text-white text-decoration-none link-opacity-75-hover">
+                Facebook: imisifedarafarms.agro{" "}
+              </a>
+              <br />
+              <i className="bi bi-instagram"></i> instagram: imisifedarafarms{" "}
+              <br />
             </p>
           </Col>
           <Col className=" foot">
@@ -130,19 +140,19 @@ export function Reliance() {
       <div>
         <Row className="rel-row m-3">
           <Col className="col tertiary">
-          <div>
-            <h5>Embrace Self Reliance</h5>
+            <div>
+              <h5>Embrace Self Reliance</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-              modi consectetur ratione quaerat, accusantium temporibus impedit
-              ducimus, placeat eaque voluptatibus doloremque nesciunt sint animi
-              odit quidem, eum eius provident! Aperiam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              explicabo alias repellendus quasi accusamus veniam.
-            </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+                modi consectetur ratione quaerat, accusantium temporibus impedit
+                ducimus, placeat eaque voluptatibus doloremque nesciunt sint
+                animi odit quidem, eum eius provident! Aperiam.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                explicabo alias repellendus quasi accusamus veniam.
+              </p>
             </div>
           </Col>
           <Col className="col div2"></Col>

@@ -119,6 +119,10 @@ h1 {
   background-color: $secondary;
   .foot {
     height: fit-content;
+    .bi-envelope-at-fill, .bi-facebook, .bi-instagram{
+font-size: 25px;
+//color: black;
+    }
   }
 }
 

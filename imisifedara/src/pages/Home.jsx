@@ -27,7 +27,7 @@ const getRef = useRef(0)
       </div>
 
       <div>
-        <Description bgPic={pig} btnText={`Let them come`}></Description>
+        <Description bgPic={pig} btnText={`Supplies`}></Description>
       </div>
       <div>
         <Reliance></Reliance>
