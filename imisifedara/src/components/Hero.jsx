@@ -110,8 +110,14 @@ export function Footer() {
                 href="#"
                 className="text-white text-decoration-none link-opacity-75-hover"
               >
+                {" "}
                 Telephone: +234-817-394-5130{" "}
               </a>
+              <br />{" "}
+              <span>
+                <i class="bi bi-geo-alt-fill"></i> Address: No 5, Ire-Akari
+                close, off Maras road, Agbede, Odugbose, Ikorodu, Lagos
+              </span>
             </p>
           </Col>
           <Col className=" foot">
@@ -127,7 +133,7 @@ export function Footer() {
           <Col className=""></Col>
         </Row>
         <hr />
-        <small> &copy; All rights reserved. Developed by </small>
+        <small> &copy;2024. All rights reserved. Developed by </small>
       </Container>
     </>
   );
@@ -143,8 +149,8 @@ export const Description = ({ bgPic, btnText }) => {
         <button
           variant="light"
           size="lg"
-          className="position-absolute p-3 border border-light tertiary"
-          style={{ bottom: `20px`, left: `25%` }}
+          className="text-uppercase fw-bolder position-absolute p-3 border border-light tertiary"
+          style={{ bottom: `20px`, left: `12%` }}
         >
           {btnText}
         </button>
