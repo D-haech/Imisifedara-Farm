@@ -82,17 +82,36 @@ export function Footer() {
             <h5 className="fw-bold"> CONTACT US</h5>
             <p>
               <i className="bi bi-envelope-at-fill"></i>
-              <a href="#" className="text-white text-decoration-none link-opacity-75-hover">
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
                 {" "}
                 Email: imisifedarafarms@gmail.com <br />
               </a>
               <i className="bi bi-facebook"></i>{" "}
-              <a href="#" className="text-white text-decoration-none link-opacity-75-hover">
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
                 Facebook: imisifedarafarms.agro{" "}
               </a>
               <br />
-              <i className="bi bi-instagram"></i> instagram: imisifedarafarms{" "}
+              <i className="bi bi-instagram"></i>{" "}
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
+                instagram: imisifedarafarms{" "}
+              </a>
               <br />
+              <i class="bi bi-telephone-inbound"></i>
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
+                Telephone: +234-817-394-5130{" "}
+              </a>
             </p>
           </Col>
           <Col className=" foot">
