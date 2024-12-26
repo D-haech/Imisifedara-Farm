@@ -5,9 +5,8 @@ import image1 from "../assets/images/array.jpg";
 import Carousel from "react-bootstrap/Carousel";
 import { Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
-
-
-
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
 function Hero() {
   return (
@@ -184,5 +183,24 @@ export function Reliance() {
     </>
   );
 }
+
+export const ContactForm = () => {
+  return (
+    <div className="w-50 m-auto my-3 p-4 tertiary border rounded contact">
+      <Form>
+        <Form.Group>
+          <Form.Control type="text" placeholder="Name" /> <br />
+          <Form.Control type="text" placeholder="Subject" /> <br />
+          <Form.Label>Message</Form.Label>
+          <Form.Control as={"textarea"} rows={9} />
+        </Form.Group>{" "}
+        <br />
+        <Button variant="primary" className=" border border-4" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </div>
+  );
+};
 
 export default Hero;
