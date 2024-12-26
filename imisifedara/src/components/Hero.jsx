@@ -2,14 +2,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import image1 from "../assets/images/array.jpg";
-//import image2 from "../images/OTS.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import { Button, Image } from "react-bootstrap";
-//import { Link } from "react-router-dom";
-
+import { Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
 
-//import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
+
 
 function Hero() {
   return (
@@ -186,4 +184,5 @@ export function Reliance() {
     </>
   );
 }
+
 export default Hero;
