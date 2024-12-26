@@ -256,3 +256,9 @@ h1 {
     height: 30vh;
   }
 }
+
+.contact{
+  @media (min-width: 375px) and (max-width: 414px) {
+    width: 90%!important;
+  }
+}

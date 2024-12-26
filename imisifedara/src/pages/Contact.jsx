@@ -1,17 +1,14 @@
-import React from 'react'
-import { useEffect,useRef } from 'react'
-
-
+import React from "react";
+import { useEffect, useRef } from "react";
+import { ContactForm } from "../components/Hero";
 
 const Contact = () => {
-  const getRef = useRef(0)
+  const getRef = useRef(0);
 
-useEffect(()=>{
-  document.title = `Contact Us`
-}, [getRef.current]);
-  return (
-    <div>Contact</div>
-  )
-}
+  useEffect(() => {
+    document.title = `Contact Us`;
+  }, [getRef.current]);
+  return <ContactForm />;
+};
 
-export default Contact
+export default Contact;

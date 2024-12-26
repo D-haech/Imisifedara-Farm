@@ -1,16 +1,20 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Header from './components/Header';
-import Home from './pages/Home';
-import About from './pages/About';
-import More from './pages/More';
-import Contact from './pages/Contact';
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import More from "./pages/More";
+import Contact from "./pages/Contact";
+import ContactUs from "./pages/form";
+import ErrorPage from "./pages/Error";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Header />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -28,27 +32,20 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-     
+      {
+        path: "/Contact-Form",
+        element: <ContactUs />,
+      },
     ],
   },
-])
+]);
 
 function App() {
-
-
   return (
-    
-    
-      
-
-      <main>
-        <RouterProvider router={router} />
-      </main>
-    
-
-
-    
-  )
+    <main>
+      <RouterProvider router={router} />
+    </main>
+  );
 }
 
-export default App
+export default App;
