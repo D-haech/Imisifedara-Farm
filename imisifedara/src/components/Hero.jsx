@@ -2,13 +2,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import image1 from "../assets/images/array.jpg";
-//import image2 from "../images/OTS.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import { Button, Image } from "react-bootstrap";
-
+import { Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
 
-//import ExampleCarouselImage from 'components/ExampleCarouselImage';
+
+
 
 function Hero() {
   return (
@@ -56,7 +55,7 @@ function Hero() {
   );
 }
 
-export const Display = ({image, heading, detail}) => {
+export const Display = ({ image, heading, detail }) => {
   return (
     <>
       <div className="p-3 dis-div m-3">
@@ -65,9 +64,7 @@ export const Display = ({image, heading, detail}) => {
         </div>
         <div className=" dis-div1 text-center">
           <h2>{heading}</h2>
-          <p>
-            {detail}
-          </p>
+          <p>{detail}</p>
         </div>
       </div>
     </>
@@ -82,7 +79,43 @@ export function Footer() {
           <Col className=" foot">
             <h5 className="fw-bold"> CONTACT US</h5>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint?
+              <i className="bi bi-envelope-at-fill"></i>
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
+                {" "}
+                Email: imisifedarafarms@gmail.com <br />
+              </a>
+              <i className="bi bi-facebook"></i>{" "}
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
+                Facebook: imisifedarafarms.agro{" "}
+              </a>
+              <br />
+              <i className="bi bi-instagram"></i>{" "}
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
+                instagram: imisifedarafarms{" "}
+              </a>
+              <br />
+              <i class="bi bi-telephone-inbound"></i>
+              <a
+                href="#"
+                className="text-white text-decoration-none link-opacity-75-hover"
+              >
+                {" "}
+                Telephone: +234-817-394-5130{" "}
+              </a>
+              <br />{" "}
+              <span>
+                <i class="bi bi-geo-alt-fill"></i> Address: No 5, Ire-Akari
+                close, off Maras road, Agbede, Odugbose, Ikorodu, Lagos
+              </span>
             </p>
           </Col>
           <Col className=" foot">
@@ -98,7 +131,7 @@ export function Footer() {
           <Col className=""></Col>
         </Row>
         <hr />
-        <small> &copy; All rights reserved. Developed by </small>
+        <small> &copy;2024. All rights reserved. Developed by </small>
       </Container>
     </>
   );
@@ -114,8 +147,8 @@ export const Description = ({ bgPic, btnText }) => {
         <button
           variant="light"
           size="lg"
-          className="position-absolute p-3 border border-light tertiary"
-          style={{ bottom: `20px`, left: `25%` }}
+          className="text-uppercase fw-bolder position-absolute p-3 border border-light tertiary"
+          style={{ bottom: `20px`, left: `12%` }}
         >
           {btnText}
         </button>
@@ -130,19 +163,19 @@ export function Reliance() {
       <div>
         <Row className="rel-row m-3">
           <Col className="col tertiary">
-          <div>
-            <h5>Embrace Self Reliance</h5>
+            <div>
+              <h5>Embrace Self Reliance</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-              modi consectetur ratione quaerat, accusantium temporibus impedit
-              ducimus, placeat eaque voluptatibus doloremque nesciunt sint animi
-              odit quidem, eum eius provident! Aperiam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              explicabo alias repellendus quasi accusamus veniam.
-            </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+                modi consectetur ratione quaerat, accusantium temporibus impedit
+                ducimus, placeat eaque voluptatibus doloremque nesciunt sint
+                animi odit quidem, eum eius provident! Aperiam.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                explicabo alias repellendus quasi accusamus veniam.
+              </p>
             </div>
           </Col>
           <Col className="col div2"></Col>
@@ -151,4 +184,5 @@ export function Reliance() {
     </>
   );
 }
+
 export default Hero;

@@ -7,8 +7,8 @@ import { useEffect, useRef } from "react";
 //import { Description } from "@radix-ui/react-dialog";
 
 const Home = () => {
-const getRef = useRef(0)
-  
+  const getRef = useRef(0);
+
   useEffect(() => {
     document.title = `Imisifedara`;
   }, [getRef.current]);
@@ -21,13 +21,15 @@ const getRef = useRef(0)
         <Display
           image={fish}
           heading={`Raw is war`}
-          detail={"Let us resume the war"}
+          detail={
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat nisi accusamus eveniet ipsa hic quo veniam, ex quia asperiores."
+          }
         ></Display>
         <Display image={pig2} />
       </div>
 
       <div>
-        <Description bgPic={pig} btnText={`Let them come`}></Description>
+        <Description bgPic={pig} btnText={"Pullets \n Available"}></Description>
       </div>
       <div>
         <Reliance></Reliance>

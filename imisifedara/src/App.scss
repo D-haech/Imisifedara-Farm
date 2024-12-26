@@ -72,6 +72,9 @@ h1 {
     width: 20rem;
     height: 10rem;
     background-color: $tertiary;
+    p {
+      font-size: 13px;
+    }
   }
   @media (min-width: 375px) and (max-width: 414px) {
     width: 90%;
@@ -119,6 +122,17 @@ h1 {
   background-color: $secondary;
   .foot {
     height: fit-content;
+    .bi-envelope-at-fill,
+    .bi-telephone-inbound,
+    .bi-facebook,
+    .bi-instagram,
+    .bi-geo-alt-fill {
+      font-size: 16px;
+      //color: red;
+    }
+    p {
+      font-size: 14px;
+    }
   }
 }
 
@@ -130,6 +144,11 @@ h1 {
   background-position: right top;
   //background-color: aquamarine;
   background-size: 100% 100%;
+
+  button {
+    color: $secondary;
+    font-size: 22px;
+  }
 
   @media (min-width: 375px) and (max-width: 414px) {
     margin-left: 20px;
@@ -201,7 +220,6 @@ h1 {
     height: 110rem;
   }
 }
-
 
 //Reliance
 .rel-row {

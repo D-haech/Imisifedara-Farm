@@ -64,7 +64,7 @@ const About = () => {
           <h3 className="text-center mb-6 text-[#597e2e]">OUR HISTORY</h3>
           <p>
             Imisifedara Farm is a family-owned business with roots stretching
-            back to 2019. Founded by [Founder's Name], our farm has been a
+            back to 2019. Founded by OluwaToyin Afolabi, our farm has been a
             cornerstone of the local community, providing fresh, high-quality
             poultry products for generations. What began as a small-scale
             operation has grown into a thriving farm, committed to sustainable
