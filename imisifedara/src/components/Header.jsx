@@ -57,7 +57,7 @@ const Header = () => {
           <ul className="d-flex list-group list-group-horizontal">
             <li className="me-5 list-group-item list-group-item-info px-5">
               <Link
-                to="/Contact-form"
+                to="/Contact"
                 className="text-decoration-none text-[#597e2e] fs-5 cursor-pointer"
               >
                 CONTACT US

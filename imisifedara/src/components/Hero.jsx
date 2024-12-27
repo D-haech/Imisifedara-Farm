@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import image1 from "../assets/images/array.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import { Image } from "react-bootstrap";
+import { FormControl, Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -76,7 +76,7 @@ export function Footer() {
       <Container fluid className="footer-container text-white">
         <Row className="pt-4">
           <Col className=" foot">
-            <h5 className="fw-bold"> CONTACT US</h5>
+            <h5 className="fw-bold"> FOR ENQUIRIES</h5>
             <p>
               <i className="bi bi-envelope-at-fill"></i>
               <a
@@ -190,6 +190,7 @@ export const ContactForm = () => {
       <Form>
         <Form.Group>
           <Form.Control type="text" placeholder="Name" /> <br />
+          <Form.Control type="Email" placeholder="Input your Email here"/> <br/>
           <Form.Control type="text" placeholder="Subject" /> <br />
           <Form.Label>Message</Form.Label>
           <Form.Control as={"textarea"} rows={9} />
