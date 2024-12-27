@@ -6,9 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import More from "./pages/More";
 import Contact from "./pages/Contact";
-import ContactUs from "./pages/form";
-import ErrorPage from "./pages/Error";
 
+import ErrorPage from "./pages/Error";
 
 const router = createBrowserRouter([
   {
@@ -31,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
-      },
-      {
-        path: "/Contact-Form",
-        element: <ContactUs />,
       },
     ],
   },

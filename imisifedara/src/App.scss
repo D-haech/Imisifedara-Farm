@@ -24,10 +24,10 @@ $tertiary: #faf8f5;
 .tertiary {
   background-color: $tertiary;
 }
-h1 {
-  background-color: blue;
-}
 
+.err{
+  color: scale-color($secondary, $lightness:-3%)
+}
 .hwe {
   height: 20rem;
 
