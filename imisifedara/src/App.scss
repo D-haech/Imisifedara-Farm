@@ -24,9 +24,11 @@ $tertiary: #faf8f5;
 .tertiary {
   background-color: $tertiary;
 }
-
-.err{
-  color: scale-color($secondary, $lightness:-3%)
+.trex {
+  color: scale-color($secondary, $lightness: -3%);
+}
+.err {
+  color: scale-color($secondary, $lightness: -3%);
 }
 .hwe {
   height: 20rem;
@@ -225,6 +227,9 @@ $tertiary: #faf8f5;
 .rel-row {
   height: 60vh;
   margin-bottom: 300px;
+  p {
+    color: scale-color($secondary, $lightness: -60%);
+  }
   .col {
     //background-color: $secondary;
     font-size: 14px;
@@ -257,8 +262,35 @@ $tertiary: #faf8f5;
   }
 }
 
-.contact{
+.contact {
   @media (min-width: 375px) and (max-width: 414px) {
-    width: 90%!important;
+    width: 90% !important;
+  }
+}
+
+.bi-exclamation-triangle {
+  font-size: 30px;
+  color: rgb(163, 90, 90);
+  animation: triangle 5s infinite;
+}
+
+@keyframes triangle {
+  0% {
+    color: rgb(163, 90, 90);
+  }
+  20% {
+    color: red;
+  }
+  40% {
+    color: chartreuse;
+  }
+  60% {
+    color: rgb(8, 110, 206);
+  }
+  80% {
+    color: gold;
+  }
+  100% {
+    color: rgb(2, 107, 2);
   }
 }
