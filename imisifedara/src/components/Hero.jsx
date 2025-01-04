@@ -48,9 +48,6 @@ function Hero() {
             style={{ height: "100%", width: "50%" }}
           />
         </Carousel.Item>
-        {/* <Carousel.Item>
-          <img src="" alt="" className="feed-image"/>
-        </Carousel.Item> */}
       </Carousel>
     </>
   );
@@ -78,9 +75,9 @@ export function Footer() {
       <Container fluid className="footer-container text-white">
         <Row className="pt-4">
           <Col className=" foot">
-            <h5 className="fw-bold"> FOR ENQUIRIES</h5>
+            <h5 className="fw-bold text-white"> FOR ENQUIRIES</h5>
             <p>
-              <i className="bi bi-envelope-at-fill"></i>
+              <i className="bi bi-envelope-at-fill text-white fs-4"></i>
               <a
                 href="#"
                 className="text-white text-decoration-none link-opacity-75-hover"
@@ -88,7 +85,7 @@ export function Footer() {
                 {" "}
                 Email: imisifedarafarms@gmail.com <br />
               </a>
-              <i className="bi bi-facebook"></i>{" "}
+              <i className="bi bi-facebook text-white fs-4"></i>{" "}
               <a
                 href="#"
                 className="text-white text-decoration-none link-opacity-75-hover"
@@ -96,7 +93,7 @@ export function Footer() {
                 Facebook: imisifedarafarms.agro{" "}
               </a>
               <br />
-              <i className="bi bi-instagram"></i>{" "}
+              <i className="bi bi-instagram text-white fs-4"></i>{" "}
               <a
                 href="#"
                 className="text-white text-decoration-none link-opacity-75-hover"
@@ -104,7 +101,7 @@ export function Footer() {
                 instagram: imisifedarafarms{" "}
               </a>
               <br />
-              <i className="bi bi-telephone-inbound"></i>
+              <i className="bi bi-telephone-inbound "></i>
               <a
                 href="#"
                 className="text-white text-decoration-none link-opacity-75-hover"
@@ -188,12 +185,14 @@ export function Reliance() {
 
 export const ContactForm = () => {
   const [inputs, setInputs] = useState({});
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
+  const [display, setDisplay] = useState(`none`);
 
   function handleChange(event) {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((val) => ({ ...val, [name]: value }));
+    setDisplay(`none`);
   }
 
   const handleSubmit = (event) => {
@@ -201,19 +200,32 @@ export const ContactForm = () => {
     // const formatString = ` Name: ${inputs.name}, \n Email: ${inputs.email}, \n Subject: ${inputs.subject}, \n Message: ${inputs.message}`;
     //  const formatArray = [`Name:${inputs.name}`, `Email:${inputs.email}`, `Subject: ${inputs.subject}`, `Message: ${inputs.message}` ]
     //   alert(formatArray.join('\n'));
-   const changeToJson = JSON.stringify(inputs, null, 5);
-        if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message){
-        setShow(true);
-     }
-     return changeToJson
+    const changeToJson = JSON.stringify(inputs, null, 5);
+    if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+
+    setDisplay(`block`);
+    return changeToJson;
     //alert(changeToJson); // You can remove this alert when you finish with the back-end
   };
 
   return (
     <div className="w-50 m-auto my-3 p-4 tertiary border rounded contact">
-      {show &&
-      <Alert variant="danger"><i className="bi bi-exclamation-triangle"></i>{" "} The form is not properly filled</Alert>}
-       {/* <Alert variant="success"><i className="bi bi-check2"></i> Success! Your Message has been Sent</Alert> }  */}
+      <div className="" style={{ display: `${display}` }}>
+        {show ? (
+          <Alert variant="danger">
+            <i className="bi bi-exclamation-triangle"></i> The form is not
+            properly filled
+          </Alert>
+        ) : (
+          <Alert variant="success">
+            <i className="bi bi-check2"></i> Success! Your Message has been Sent
+          </Alert>
+        )}
+      </div>
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Control
@@ -258,4 +270,4 @@ export const ContactForm = () => {
   );
 };
 
-export default Hero
+export default Hero;

@@ -263,6 +263,10 @@ $tertiary: #faf8f5;
 }
 
 .contact {
+  .bi-check2{
+    font-size: 26px!important;
+    font-weight: 900;
+  }
   @media (min-width: 375px) and (max-width: 414px) {
     width: 90% !important;
   }
