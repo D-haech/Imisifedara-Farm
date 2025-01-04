@@ -3,12 +3,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import image1 from "../assets/images/array.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import { FormControl, Image } from "react-bootstrap";
+import {  Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
 import { Alert } from "react-bootstrap";
+
+/** This part generally contains all the components of the Imisifedara app 
+ This is the first component for the hero section. The one that displays the pictures*/
 
 function Hero() {
   return (
@@ -53,6 +56,8 @@ function Hero() {
   );
 }
 
+// This is the second component that displays the animals and talks a little about them
+
 export const Display = ({ image, heading, detail }) => {
   return (
     <>
@@ -69,6 +74,8 @@ export const Display = ({ image, heading, detail }) => {
   );
 };
 
+
+/* This is the footer component*/
 export function Footer() {
   return (
     <>
@@ -135,6 +142,9 @@ export function Footer() {
   );
 }
 
+
+/** This is another component */
+
 export const Description = ({ bgPic, btnText }) => {
   return (
     <>
@@ -155,6 +165,9 @@ export const Description = ({ bgPic, btnText }) => {
   );
 };
 
+
+
+/** This is another component */
 export function Reliance() {
   return (
     <>
@@ -183,6 +196,8 @@ export function Reliance() {
   );
 }
 
+
+/** This is another component */
 export const ContactForm = () => {
   const [inputs, setInputs] = useState({});
   const [show, setShow] = useState(false);
