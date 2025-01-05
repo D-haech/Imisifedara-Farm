@@ -1,6 +1,6 @@
 from django.urls import path
-from Farm import views
+from Farm.views import Sendmail
 
 urlpatterns = [
-    path('', views.tester, name= 'tested'),
+    path('api/imisifedara/send/mail', Sendmail.as_view(), name= ''),
 ]

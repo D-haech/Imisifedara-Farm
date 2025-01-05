@@ -188,32 +188,106 @@ export function Reliance() {
 
 export const ContactForm = () => {
   const [inputs, setInputs] = useState({});
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
+  const [display, setDisplay] = useState(`none`);
 
   function handleChange(event) {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((val) => ({ ...val, [name]: value }));
+    setDisplay(`none`);
   }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // const formatString = ` Name: ${inputs.name}, \n Email: ${inputs.email}, \n Subject: ${inputs.subject}, \n Message: ${inputs.message}`;
-    //  const formatArray = [`Name:${inputs.name}`, `Email:${inputs.email}`, `Subject: ${inputs.subject}`, `Message: ${inputs.message}` ]
-    //   alert(formatArray.join('\n'));
-   const changeToJson = JSON.stringify(inputs, null, 5);
-        if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message){
-        setShow(true);
-     }
-     return changeToJson
-    //alert(changeToJson); // You can remove this alert when you finish with the back-end
+  const sendMail = async () => {
+    const url = 'http://127.0.0.1:8000/api/imisifedara/send/mail';
+    
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json', // Specify JSON content type
+        },
+        body: JSON.stringify({
+          name: inputs.name,
+          email: inputs.email,
+          subject: inputs.subject,
+          message: inputs.message,
+        }),
+      });
+  
+      // Check if the response is okay
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Email sent successfully:', data.message);
+        // Add UI feedback or further actions here
+      } else {
+        // Parse and log error details from the server response
+        const errorData = await response.json();
+        console.error('Failed to send email:', errorData.message);
+        alert(`Error: ${errorData.message}`); // User-friendly feedback
+      }
+    } catch (error) {
+      // Handle network or other unexpected errors
+      console.error('An unexpected error occurred:', error);
+      alert('An unexpected error occurred. Please try again.');
+    }
   };
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+  
+    // Optional: Basic validation before sending
+    if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message) {
+      alert('All fields are required.');
+      setShow(true);
+      setDisplay(`block`);
+      return;
+    }
+  
+    try {
+      // Optionally, set a loading state here (if applicable)
+      await sendMail(); // Wait for the email to be sent
+      alert('Email sent successfully!'); // Provide feedback to the user
+      setShow(false)
+      setDisplay(`block`);
+      // Optionally, clear the form inputs here
+    } catch (error) {
+      console.error('Error in handleSubmit:', error);
+      alert('An error occurred while sending the email. Please try again.');
+    }
+  };
+  
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   sendMail();
+  //   // const formatString = ` Name: ${inputs.name}, \n Email: ${inputs.email}, \n Subject: ${inputs.subject}, \n Message: ${inputs.message}`;
+  //   //  const formatArray = [`Name:${inputs.name}`, `Email:${inputs.email}`, `Subject: ${inputs.subject}`, `Message: ${inputs.message}` ]
+  //   //   alert(formatArray.join('\n'));
+  //   // const changeToJson = JSON.stringify(inputs, null, 5);
+  //   //     if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message){
+  //   //     setShow(true);
+  //   //  }
+  //   //  return changeToJson
+     
+
+  //   //alert(changeToJson); // You can remove this alert when you finish with the back-end
+  // };
 
   return (
     <div className="w-50 m-auto my-3 p-4 tertiary border rounded contact">
-      {show &&
-      <Alert variant="danger"><i className="bi bi-exclamation-triangle"></i>{" "} The form is not properly filled</Alert>}
-       {/* <Alert variant="success"><i className="bi bi-check2"></i> Success! Your Message has been Sent</Alert> }  */}
+      <div className="" style={{ display: `${display}` }}>
+        {show ? (
+          <Alert variant="danger">
+            <i className="bi bi-exclamation-triangle"></i> The form is not
+            properly filled
+          </Alert>
+        ) : (
+          <Alert variant="success">
+            <i className="bi bi-check2"></i> Success! Your Message has been Sent
+          </Alert>
+        )}
+      </div>
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Control
