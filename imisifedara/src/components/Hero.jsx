@@ -59,9 +59,9 @@ function Hero() {
 export const Display = ({ image, heading, detail }) => {
   return (
     <>
-      <div className="p-3 dis-div m-3">
+      <div className="p-3 dis-div m-2">
         <div className="pic-div">
-          <Image src={image} className="ms-3 mt-3 img" rounded></Image>
+          <Image src={image} className="mx-auto  img" rounded></Image>
         </div>
         <div className=" dis-div1 text-center">
           <h2>{heading}</h2>
@@ -141,18 +141,20 @@ export function Footer() {
 export const Description = ({ bgPic, btnText }) => {
   return (
     <>
-      <div
-        className="describe position-relative"
-        style={{ backgroundImage: `url(${bgPic})` }}
-      >
-        <button
-          variant="light"
-          size="lg"
-          className="text-uppercase fw-bolder position-absolute p-3 border border-light tertiary"
-          style={{ bottom: `20px`, left: `12%` }}
+      <div>
+        <div
+          className="describe position-relative "
+          style={{ backgroundImage: `url(${bgPic})` }}
         >
-          {btnText}
-        </button>
+          <button
+            variant="light"
+            size="lg"
+            className="text-uppercase fw-bolder position-absolute p-3 border border-light tertiary"
+            style={{ bottom: `20px`, left: `25%` }}
+          >
+            {btnText}
+          </button>
+        </div>
       </div>
     </>
   );
@@ -199,13 +201,13 @@ export const ContactForm = () => {
   }
 
   const sendMail = async () => {
-    const url = 'http://127.0.0.1:8000/api/imisifedara/send/mail';
-    
+    const url = "http://127.0.0.1:8000/api/imisifedara/send/mail";
+
     try {
       const response = await fetch(url, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json', // Specify JSON content type
+          "Content-Type": "application/json", // Specify JSON content type
         },
         body: JSON.stringify({
           name: inputs.name,
@@ -214,49 +216,50 @@ export const ContactForm = () => {
           message: inputs.message,
         }),
       });
-  
+
       // Check if the response is okay
       if (response.ok) {
         const data = await response.json();
-        console.log('Email sent successfully:', data.message);
+        console.log("Email sent successfully:", data.message);
         // Add UI feedback or further actions here
+        /**   setShow(false);
+        setDisplay(`block`);*/
       } else {
         // Parse and log error details from the server response
         const errorData = await response.json();
-        console.error('Failed to send email:', errorData.message);
+        console.error("Failed to send email:", errorData.message);
         alert(`Error: ${errorData.message}`); // User-friendly feedback
       }
     } catch (error) {
       // Handle network or other unexpected errors
-      console.error('An unexpected error occurred:', error);
-      alert('An unexpected error occurred. Please try again.');
+      console.error("An unexpected error occurred:", error);
+      alert("An unexpected error occurred. Please try again.");
     }
   };
-  
+
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
-  
+
     // Optional: Basic validation before sending
     if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message) {
-      alert('All fields are required.');
+      alert("All fields are required.");
       setShow(true);
       setDisplay(`block`);
       return;
     }
-  
+
     try {
       // Optionally, set a loading state here (if applicable)
       await sendMail(); // Wait for the email to be sent
-      alert('Email sent successfully!'); // Provide feedback to the user
-      setShow(false)
+      alert("Email sent successfully!"); // Provide feedback to the user
+      setShow(false);
       setDisplay(`block`);
       // Optionally, clear the form inputs here
     } catch (error) {
-      console.error('Error in handleSubmit:', error);
-      alert('An error occurred while sending the email. Please try again.');
+      console.error("Error in handleSubmit:", error);
+      alert("An error occurred while sending the email. Please try again.");
     }
   };
-  
 
   // const handleSubmit = (event) => {
   //   event.preventDefault();
@@ -269,7 +272,6 @@ export const ContactForm = () => {
   //   //     setShow(true);
   //   //  }
   //   //  return changeToJson
-     
 
   //   //alert(changeToJson); // You can remove this alert when you finish with the back-end
   // };
@@ -332,4 +334,4 @@ export const ContactForm = () => {
   );
 };
 
-export default Hero
+export default Hero;

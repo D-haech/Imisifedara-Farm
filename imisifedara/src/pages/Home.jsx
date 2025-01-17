@@ -28,9 +28,21 @@ const Home = () => {
         <Display image={pig2} />
       </div>
 
-      <div>
-        <Description bgPic={pig} btnText={"Pullets \n Available"}></Description>
+      <div className="row div3">
+        <div className="col">
+          <Description bgPic={pig} btnText={`Pig and Eat`} />
+        </div>
+        <div className="col">
+          <Description bgPic={pig} btnText={`Pig and Eat`} />
+        </div>
+        <div className="col d-none d-md-block">
+          <Description bgPic={pig} btnText={`Pig and Eat`} />
+        </div>
+        <div className="col d-none d-md-block">
+          <Description bgPic={pig} btnText={`Pig and Eat`} />
+        </div>
       </div>
+
       <div>
         <Reliance></Reliance>
       </div>
