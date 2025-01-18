@@ -4,6 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import logo from "../assets/images/logo.jpeg";
 import grid from "../assets/icons/justify.svg";
 import { Footer } from "./Hero";
+import Dropdown from "./Dropdown";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ const Header = () => {
             <li className="me-5 list">
               <Link
                 to="/"
-                className="text-decoration-none text-[#597e2e] fs-5 cursor-pointer 
+                className="flex text-decoration-none text-[#597e2e] fs-5 cursor-pointer 
                   hover:bg-[#597e2e] hover:rounded-sm hover:text-[#faf8f5] px-3 py-2"
               >
                 HOME
@@ -35,22 +36,17 @@ const Header = () => {
             <li className="me-5 list">
               <Link
                 to="/about"
-                className="text-decoration-none text-[#597e2e] fs-5 cursor-pointer
+                className="flex text-decoration-none text-[#597e2e] fs-5 cursor-pointer
                   hover:bg-[#597e2e] hover:rounded-sm hover:text-[#faf8f5] px-3 py-2"
               >
                 ABOUT
               </Link>
             </li>
-            <li className="me-5 list">
-              <Link
-                to="/more"
-                className="text-decoration-none text-[#597e2e] fs-5 cursor-pointer
-                  hover:bg-[#597e2e] hover:rounded-sm hover:text-[#faf8f5] px-3 py-2"
-              >
-                MORE
-              </Link>
+            <li>
+              <Dropdown />
             </li>
           </ul>
+          
         </div>
 
         <div className="d-none d-lg-flex">
@@ -109,13 +105,7 @@ const ShowNav = ({ menuOpen, setMenuOpen }) => {
           </Link>
         </li>
         <li className="me-5 mb-3 list">
-          <Link
-            to="/more"
-            className="text-decoration-none text-[#faf8f5] text-lg hover:text-2xl hover:font-extrabold cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            MORE
-          </Link>
+          <Dropdown />
         </li>
         <li className="me-5 list">
           <Link
