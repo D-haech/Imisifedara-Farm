@@ -8,6 +8,10 @@ import More from "./pages/More";
 import Contact from "./pages/Contact";
 
 import ErrorPage from "./pages/Error";
+import Executives from "./pages/Executives";
+import Birds from "./pages/Birds";
+import SeaFood from "./pages/SeaFood";
+import Livestock from "./pages/Livestock";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +28,26 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/more",
+        path: "/products",
         element: <More />,
+        children: [
+          {
+            index: true,
+            element: <Birds />
+          },
+          {
+            path: "seafood",
+            element: <SeaFood />
+          },
+          {
+            path: "livestock",
+            element: <Livestock />
+          },
+        ]
+      },
+      {
+        path: "/executives",
+        element: <Executives />,
       },
       {
         path: "/contact",

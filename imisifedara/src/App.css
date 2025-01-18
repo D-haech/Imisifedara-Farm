@@ -76,4 +76,13 @@
   .mobile_animate{
     @apply transition-opacity duration-1000 ease-in-out;
   }
+
+  .mobile_dropdown{
+    @apply text-[#faf8f5] text-lg hover:text-2xl hover:font-extrabold cursor-pointer;
+  }
+
+  .dropdown{
+    @apply inline-flex w-full justify-center gap-x-1.5 rounded-md text-[#597e2e] cursor-pointer 
+    hover:bg-[#597e2e] hover:rounded-sm hover:text-[#faf8f5] px-3 py-2 text-xl hover:text-xl hover:font-normal;
+  }
 }
