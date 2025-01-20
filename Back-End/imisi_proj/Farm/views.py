@@ -35,4 +35,5 @@ class Sendmail(APIView):
         except Exception as e:
             return Response({'status': False, 'message': f'An error occurred: {str(e)}'}, status=500)
 
-            
+def ReactTemplate(request):
+    return render(request, 'Farm/index.html')

@@ -4,7 +4,7 @@ import ProductList from "../components/ProductList";
 import isa_brown  from "../assets/images/images/isa_brown_layer-bird.png";
 import rhode_island  from "../assets/images/images/rhode_island_red.jpg";
 import broiler from "../assets/images/images/boiler-chicken-jpg.png";
-import turkey from "../assets/images/images/Broad-Breasted-White.jpeg";
+import turkey from "../assets/images/images/turkeys11.jpg";
 import { Carousel } from "react-bootstrap";
 
 const Birds = () => {
@@ -67,7 +67,7 @@ const Birds = () => {
           <ProductList 
             image={broiler}
             title="Broiler Chicken (Cornish Cross)"
-            breed="Rhode Island Red."
+            breed="Cornish Cross"
             origin="Developed for high meat yield and rapid growth."
             features="Typically 6-8 weeks before processing for optimal quality."
             weight="3–4 kg."
