@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\laptop\Desktop\full stack training\Imisi--Farm\imisifedara-farm\back-end\imisi_proj\Enviro
+set VIRTUAL_ENV=C:\Users\laptop\Desktop\full stack training\imisi_farm\Imisifedara-Farm\back-end\imisi_proj\Enviro
 
 if not defined PROMPT set PROMPT=$P$G
 
