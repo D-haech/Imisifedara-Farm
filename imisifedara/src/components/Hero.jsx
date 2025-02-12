@@ -59,7 +59,7 @@ function Hero() {
 export const Display = ({ image, heading, detail }) => {
   return (
     <>
-      <div className="p-3 dis-div m-2 shadow-lg">
+      <div className="p-3 dis-div m-2 shadow border rounded-2">
         <div className="pic-div">
           <Image src={image} className="mx-auto  img" rounded></Image>
         </div>
