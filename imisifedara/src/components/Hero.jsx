@@ -59,7 +59,7 @@ function Hero() {
 export const Display = ({ image, heading, detail }) => {
   return (
     <>
-      <div className="p-3 dis-div m-2">
+      <div className="p-3 dis-div m-2 shadow-lg">
         <div className="pic-div">
           <Image src={image} className="mx-auto  img" rounded></Image>
         </div>
@@ -121,13 +121,15 @@ export function Footer() {
           </Col>
           <Col className=" foot">
             <h5 className="fw-bold">SHOP NOW</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor.
-            </p>
+            <p>Discover our premium poultry and livestock products!</p>
           </Col>
           <Col className=" foot">
-            <h5 className="fw-bold">INFORMATION</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+            <h5 className="fw-bold">Privacy Policy |</h5>
+            <p>
+              Your privacy is important to us. We collect personal and
+              non-personal information to enhance your experience. For details,
+              read our full Privacy Policy and Terms of Service.
+            </p>
           </Col>
           <Col className=""></Col>
         </Row>
