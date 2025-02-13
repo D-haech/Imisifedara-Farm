@@ -170,16 +170,23 @@ export function Reliance() {
           <Col className="col tertiary">
             <div>
               <h5>Embrace Self Reliance</h5>
-
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-                modi consectetur ratione quaerat, accusantium temporibus impedit
-                ducimus, placeat eaque voluptatibus doloremque nesciunt sint
-                animi odit quidem, eum eius provident! Aperiam.
+                Self-reliance in poultry and farming ensures food security,
+                financial independence, and sustainability. By taking control of
+                food production and income generation, farmers reduce dependence
+                on external sources and build stable livelihoods.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                explicabo alias repellendus quasi accusamus veniam.
+                Starting small, applying best practices in disease management
+                and feeding, and using locally available resources enhance
+                productivity. Diversifying into egg production, fish farming, or
+                vegetable gardening maximizes profits. Proper farm management,
+                hygiene, and record-keeping further ensure success.
+              </p>
+              <p>
+                Embracing self-reliance in farming empowers individuals to
+                create sustainable businesses, contribute to food security, and
+                achieve economic stability.
               </p>
             </div>
           </Col>
