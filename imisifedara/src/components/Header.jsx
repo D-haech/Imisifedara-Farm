@@ -105,7 +105,10 @@ const ShowNav = ({ menuOpen, setMenuOpen }) => {
           </Link>
         </li>
         <li className="me-5 mb-3 list">
-          <Dropdown />
+          <Dropdown
+            setMenuOpen={setMenuOpen}
+            menuOpen={menuOpen} 
+          />
         </li>
         <li className="me-5 list">
           <Link
