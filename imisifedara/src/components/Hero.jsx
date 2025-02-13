@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import image1 from "../assets/images/array.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import { FormControl, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -59,7 +59,7 @@ function Hero() {
 export const Display = ({ image, heading, detail }) => {
   return (
     <>
-      <div className="p-3 dis-div m-2">
+      <div className="p-3 dis-div m-2 shadow border rounded-2">
         <div className="pic-div">
           <Image src={image} className="mx-auto  img" rounded></Image>
         </div>
@@ -121,13 +121,15 @@ export function Footer() {
           </Col>
           <Col className=" foot">
             <h5 className="fw-bold">SHOP NOW</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor.
-            </p>
+            <p>Discover our premium poultry and livestock products!</p>
           </Col>
           <Col className=" foot">
-            <h5 className="fw-bold">INFORMATION</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+            <h5 className="fw-bold">Privacy Policy </h5>
+            <p>
+              Your privacy is important to us. We collect personal and
+              non-personal information to enhance your experience. For details,
+              read our full Privacy Policy and Terms of Service.
+            </p>
           </Col>
           <Col className=""></Col>
         </Row>
@@ -168,16 +170,23 @@ export function Reliance() {
           <Col className="col tertiary">
             <div>
               <h5>Embrace Self Reliance</h5>
-
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-                modi consectetur ratione quaerat, accusantium temporibus impedit
-                ducimus, placeat eaque voluptatibus doloremque nesciunt sint
-                animi odit quidem, eum eius provident! Aperiam.
+                Self-reliance in poultry and farming ensures food security,
+                financial independence, and sustainability. By taking control of
+                food production and income generation, farmers reduce dependence
+                on external sources and build stable livelihoods.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                explicabo alias repellendus quasi accusamus veniam.
+                Starting small, applying best practices in disease management
+                and feeding, and using locally available resources enhance
+                productivity. Diversifying into egg production, fish farming, or
+                vegetable gardening maximizes profits. Proper farm management,
+                hygiene, and record-keeping further ensure success.
+              </p>
+              <p>
+                Embracing self-reliance in farming empowers individuals to
+                create sustainable businesses, contribute to food security, and
+                achieve economic stability.
               </p>
             </div>
           </Col>

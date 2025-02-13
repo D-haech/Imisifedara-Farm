@@ -4,6 +4,7 @@ import pig from "../assets/images/pig116.jpg";
 import fish from "../assets/images/images/fish.png";
 import pig2 from "../assets/images/images/pig112.jpg";
 import { useEffect, useRef } from "react";
+import chicken from "../assets/images/images/cock11.jpeg";
 //import { Description } from "@radix-ui/react-dialog";
 
 const Home = () => {
@@ -17,15 +18,26 @@ const Home = () => {
       <div className="row">
         <Hero></Hero>
       </div>
-      <div className="row">
+      <div className="row justify-content-between ">
         <Display
           image={fish}
-          heading={`Raw is war`}
+          heading={`Sustainably Farmed`}
           detail={
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repellat nisi accusamus eveniet ipsa hic quo veniam, ex quia asperiores."
+            " Experience the best in aquaculture! Our catfish are sourced from clean, sustainable environments, ensuring top-notch quality and flavor. Whether you’re looking for fresh fillets for your next meal or healthy stock for your pond, we’ve got you covered!."
           }
         ></Display>
-        <Display image={pig2} />
+        <Display
+          image={pig2}
+          heading={`Ideal for Breeding or Butchering`}
+          detail={`Discover the best in livestock!
+Our pigs are raised with care, ensuring high-quality meat that’s flavorful and tender. Perfect for farmers and culinary enthusiasts alike, our pigs come in various breeds to suit your needs!`}
+        />
+
+        <Display
+          image={chicken}
+          heading={`Chicken`}
+          detail={`Broilers, layers, cocks, and more!`}
+        />
       </div>
 
       <div className="row div3">
