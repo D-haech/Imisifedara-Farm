@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import image1 from "../assets/images/array.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import { FormControl, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import farm from "../assets/images/Farm.jpeg";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -124,7 +124,7 @@ export function Footer() {
             <p>Discover our premium poultry and livestock products!</p>
           </Col>
           <Col className=" foot">
-            <h5 className="fw-bold">Privacy Policy |</h5>
+            <h5 className="fw-bold">Privacy Policy </h5>
             <p>
               Your privacy is important to us. We collect personal and
               non-personal information to enhance your experience. For details,
