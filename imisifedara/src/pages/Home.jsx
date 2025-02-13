@@ -60,7 +60,11 @@ const Home = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
+      <div className="d-none d-md-block d-lg-block">
+=======
       <div className="mb-20">
+>>>>>>> 63fd5b78ad34a31aa1fea409afdba425b1c7ca24
         <Reliance></Reliance>
       </div>
     </div>
