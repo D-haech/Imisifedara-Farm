@@ -32,14 +32,16 @@ $tertiary: #faf8f5;
 }
 .hwe {
   height: 20rem;
-
-  
 }
 
 .two-col {
   height: 30rem;
   @media (min-width: 375px) and (max-width: 414px) {
     height: 14rem;
+  }
+
+  @media (min-width: 250px) and (max-width: 370) {
+    //background-color: red !important;
   }
 }
 
@@ -77,25 +79,50 @@ $tertiary: #faf8f5;
       font-size: 13px;
     }
   }
+
+  @media (min-width: 250px) and (max-width: 370px) {
+    background-color: red;
+    width: 90%;
+    display: flex;
+    //justify-content: space-between;
+    //padding: 0px !important;
+    .pic-div {
+      padding: 0px !important;
+      margin: 0px !important;
+      .img {
+        width: 30%;
+      }
+    }
+
+    .dis-div1 {
+      width: 5rem;
+      height: 7rem;
+      font-size: 5px !important;
+      background-color: blue;
+      h2 {
+        font-size: 10px;
+      }
+    }
+  }
+
   @media (min-width: 375px) and (max-width: 414px) {
     width: 96%;
     //background-color: $primary;
     display: flex;
     justify-content: space-between;
-    
-    
+
     .dis-div1 {
       width: 15rem;
       //margin-top: 10px;
       border-radius: 5px;
       height: fit-content;
-      font-size: 11px!important;
-      h2{
+      font-size: 11px !important;
+      h2 {
         font-size: 18px;
         font-weight: bolder;
       }
     }
-    .img{
+    .img {
       width: 90%;
       height: 7rem;
     }
@@ -169,13 +196,12 @@ $tertiary: #faf8f5;
   }
 
   @media (min-width: 375px) and (max-width: 414px) {
-   
     width: 100%;
     height: 10rem;
-    
-    button{
+
+    button {
       font-size: 10px;
-      padding: 3px!important;
+      padding: 3px !important;
     }
   }
 
@@ -190,7 +216,6 @@ $tertiary: #faf8f5;
   }
 }
 
-
 //Carousel
 
 .carousel-height {
@@ -202,6 +227,20 @@ $tertiary: #faf8f5;
       margin: 70px 0px 0px 11rem;
       strong {
         color: $secondary;
+      }
+    }
+  }
+
+  @media (min-width: 250px) and (max-width: 370px) {
+    height: 5vh;
+    // background-color: red!important;
+    .item {
+      height: 25vh;
+      .hero {
+        margin: 0 0 0 7px;
+        strong {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -243,6 +282,9 @@ $tertiary: #faf8f5;
 
   @media (min-width: 667px) and (max-width: 768px) {
     height: 110rem;
+  }
+
+  @media (min-width: 250px) and (max-width: 370px) {
   }
 }
 
@@ -289,6 +331,9 @@ $tertiary: #faf8f5;
   @media (min-width: 375px) and (max-width: 414px) {
     width: 90% !important;
   }
+  @media (min-width: 250px) and (max-width: 370px) {
+    width: 90% !important;
+  }
 }
 
 .bi-exclamation-triangle {
@@ -318,9 +363,8 @@ $tertiary: #faf8f5;
   }
 }
 
-
-.div3{
-  .col{
+.div3 {
+  .col {
     //background-color: red;
     height: 19rem;
     margin-right: 3px;

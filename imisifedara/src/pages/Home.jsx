@@ -55,7 +55,7 @@ Our pigs are raised with care, ensuring high-quality meat that’s flavorful and
         </div>
       </div>
 
-      <div>
+      <div className="d-none d-md-block d-lg-block">
         <Reliance></Reliance>
       </div>
     </div>
