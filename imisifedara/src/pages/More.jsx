@@ -13,13 +13,13 @@ const More = () => {
     <>
       <header className="flex gap-6 justify-center mt-4 mb-6">
         <p>
-          <Link to="/products" className="no-underline text-gray-700 bg-[#a0c52a] px-3 py-2 rounded-sm text-lg">BIRDS</Link>
+          <Link to="/products" className="no-underline text-gray-700 bg-[#a0c52a] px-3 py-2 rounded-sm sm:text-lg text-sm">BIRDS</Link>
         </p>
         <p>
-          <Link to="/products/seafood" className="no-underline text-gray-700 bg-[#a0c52a] px-3 py-2 rounded-sm text-lg">SEA FOODS</Link>
+          <Link to="/products/seafood" className="no-underline text-gray-700 bg-[#a0c52a] px-3 py-2 rounded-sm sm:text-lg text-sm">SEA FOODS</Link>
         </p>
         <p>
-          <Link to="/products/livestock" className="no-underline text-gray-700 bg-[#a0c52a] px-3 py-2 rounded-sm text-lg">LIVESTOCKS</Link>
+          <Link to="/products/livestock" className="no-underline text-gray-700 bg-[#a0c52a] px-3 py-2 rounded-sm sm:text-lg text-sm">LIVESTOCKS</Link>
         </p>
       </header>
       <main>
