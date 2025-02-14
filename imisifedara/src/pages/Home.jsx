@@ -21,7 +21,7 @@ const Home = () => {
       <div className="row my-20">
         <Hero></Hero>
       </div>
-      <div className="row justify-content-between mb-20 !mx-10">
+      <div className="row justify-content-between">
         <Display
           image={fish}
           heading={`Sustainably Farmed`}
@@ -60,11 +60,7 @@ const Home = () => {
         </div>
       </div>
 
-<<<<<<< HEAD
       <div className="d-none d-md-block d-lg-block">
-=======
-      <div className="mb-20">
->>>>>>> 63fd5b78ad34a31aa1fea409afdba425b1c7ca24
         <Reliance></Reliance>
       </div>
     </div>

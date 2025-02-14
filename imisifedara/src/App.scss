@@ -70,11 +70,11 @@ $tertiary: #faf8f5;
 // display div
 .dis-div {
   width: calc(50px + 22%);
-  background-color: $tertiary;
+  background-color: white;
   .dis-div1 {
     width: 20rem;
     height: 10rem;
-    background-color: $tertiary;
+    background-color: white;
     p {
       font-size: 13px;
     }
@@ -84,13 +84,15 @@ $tertiary: #faf8f5;
     background-color: red;
     width: 90%;
     display: flex;
+    box-sizing: border-box;
     //justify-content: space-between;
     //padding: 0px !important;
     .pic-div {
       padding: 0px !important;
       margin: 0px !important;
       .img {
-        width: 30%;
+        width: 60%;
+        margin: 0 !important;
       }
     }
 
@@ -174,9 +176,20 @@ $tertiary: #faf8f5;
     .bi-geo-alt-fill {
       font-size: 16px;
       //color: red;
+      @media (min-width: 250px) and (max-width: 370px) {
+        font-size: 7px;
+      }
     }
     p {
       font-size: 14px;
+      @media (min-width: 250px) and (max-width: 370px) {
+        font-size: 5px;
+      }
+    }
+    h5{
+      @media (min-width: 250px) and (max-width: 370px) {
+        font-size: 7px;
+      }
     }
   }
 }
