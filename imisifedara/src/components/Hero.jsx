@@ -134,7 +134,7 @@ export function Footer() {
           <Col className=""></Col>
         </Row>
         <hr />
-        <small> &copy;2024. All rights reserved. Developed by </small>
+        <small> &copy;2024. All rights reserved. Developed by Osarogie Igbinosa and </small>
       </Container>
     </>
   );
