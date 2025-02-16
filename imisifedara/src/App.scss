@@ -390,4 +390,11 @@ $tertiary: #faf8f5;
     height: 19rem;
     margin-right: 3px;
   }
+
+  @media (min-width: 250px) and (max-width: 370px) {
+    div:nth-child(2){
+      margin-top: 5px;
+      display: none;
+    }
+  }
 }
