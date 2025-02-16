@@ -76,7 +76,7 @@ export function Footer() {
   return (
     <>
       <Container fluid className="footer-container text-white">
-        <Row className="pt-4">
+        <Row className="pt-4 ">
           <Col className=" foot">
             <h5 className="fw-bold"> FOR ENQUIRIES</h5>
             <p>
@@ -134,7 +134,14 @@ export function Footer() {
           <Col className=""></Col>
         </Row>
         <hr />
-        <small> &copy;2024. All rights reserved. Developed by Osarogie Igbinosa and </small>
+        <small>
+          {" "}
+          &copy;2024. All rights reserved. Developed by{" "}
+          <a href="#" className="text-decoration-none text-dark">
+            Osarogie Igbinosa 
+          </a>{" "}
+          and <a href="#" className="text-decoration-none text-dark"> Oluwasegun John Ayodeji </a>
+        </small>
       </Container>
     </>
   );

@@ -84,15 +84,15 @@ $tertiary: #faf8f5;
     //background-color: red;
     width: 100%;
     display: flex;
-    
+
     box-sizing: border-box;
-//margin-top: 3rem!important;
+    //margin-top: 3rem!important;
     //justify-content: space-between;
     //padding: 0px !important;
     .pic-div {
       padding: 0px !important;
       margin: 0px !important;
-      width:40% ;
+      width: 40%;
       .img {
         width: 100%;
         margin: 0 !important;
@@ -101,14 +101,14 @@ $tertiary: #faf8f5;
 
     .dis-div1 {
       width: fit-content;
-      
+
       height: 7rem;
       font-size: 3px !important;
       //background-color: blue;
       h2 {
         font-size: 10px;
       }
-      P{
+      P {
         font-size: 11px;
       }
     }
@@ -174,8 +174,18 @@ $tertiary: #faf8f5;
 
 .footer-container {
   background-color: $secondary;
+  @media (min-width: 250px) and (max-width: 370px) {
+    small {
+      font-size: 7px;
+    }
+  }
   .foot {
     height: fit-content;
+
+    @media (min-width: 250px) and (max-width: 370px) {
+      font-size: 7px;
+      margin-right: 10px;
+    }
     .bi-envelope-at-fill,
     .bi-telephone-inbound,
     .bi-facebook,
@@ -193,7 +203,7 @@ $tertiary: #faf8f5;
         font-size: 7px;
       }
     }
-    h5{
+    h5 {
       @media (min-width: 250px) and (max-width: 370px) {
         font-size: 10px;
       }
@@ -392,7 +402,7 @@ $tertiary: #faf8f5;
   }
 
   @media (min-width: 250px) and (max-width: 370px) {
-    div:nth-child(2){
+    div:nth-child(2) {
       margin-top: 5px;
       display: none;
     }

@@ -5,8 +5,8 @@ const Executives = () => {
     <div>
       <p>
         <h5 className="text-center pt-3">Executive Team – Imisifedara Farm</h5>
-        ## **Meet Our Founder and CEO**
-        <strong>OluwaToyin Afolabi</strong> – Founder & Chief Executive Officer
+        <b>Meet Our Founder and CEO</b>: 
+        <strong> OluwaToyin Afolabi</strong> – Founder & Chief Executive Officer
         OluwaToyin Afolabi is a visionary agripreneur with a deep passion for
         sustainable farming and food production. With years of experience in
         modern agricultural techniques and farm management, he founded
