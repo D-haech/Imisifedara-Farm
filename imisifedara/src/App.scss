@@ -178,6 +178,7 @@ $tertiary: #faf8f5;
     small {
       font-size: 7px;
     }
+    
   }
   .foot {
     height: fit-content;
@@ -185,6 +186,13 @@ $tertiary: #faf8f5;
     @media (min-width: 250px) and (max-width: 370px) {
       font-size: 7px;
       margin-right: 10px;
+      //background-color: red;
+      //width: 40px;
+      &:last-of-type{
+        //background-color: red;
+        display: none;
+      }
+      
     }
     .bi-envelope-at-fill,
     .bi-telephone-inbound,

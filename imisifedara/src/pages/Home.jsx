@@ -47,16 +47,16 @@ const Home = () => {
 
       <div className="row div3 mb-20">
         <div className="col">
-          <Description bgPic={pig} btnText={`Pig and Eat`} />
+          <Description bgPic={pig} btnText={`Piglets`} />
         </div>
         <div className="col">
-          <Description bgPic={buyfish} btnText={`Pig and Eat`} />
+          <Description bgPic={buyfish} btnText={`Fresh Fish`} />
         </div>
         <div className="col d-none d-md-block">
-          <Description bgPic={chicks} btnText={`Pig and Eat`} />
+          <Description bgPic={chicks} btnText={`Chicks`} />
         </div>
         <div className="col d-none d-md-block">
-          <Description bgPic={eggs} btnText={`Pig and Eat`} />
+          <Description bgPic={eggs} btnText={`Layer Eggs`} />
         </div>
       </div>
 

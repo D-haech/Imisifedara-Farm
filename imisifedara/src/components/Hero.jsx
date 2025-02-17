@@ -131,7 +131,7 @@ export function Footer() {
               read our full Privacy Policy and Terms of Service.
             </p>
           </Col>
-          <Col className=""></Col>
+          
         </Row>
         <hr />
         <small>
