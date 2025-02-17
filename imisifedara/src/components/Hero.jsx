@@ -217,7 +217,7 @@ export const ContactForm = () => {
   }
 
   const sendMail = async () => {
-    const url = "http://127.0.0.1:8000/api/imisifedara/send/mail";
+    const url = "https://imisifedara.onrender.com/api/imisifedara/send/mail"; 
 
     try {
       const response = await fetch(url, {
