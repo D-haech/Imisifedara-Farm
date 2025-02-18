@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nn297&yp3lyrxgw*du@-9a@tlg#2im4g=g*_uog(0^z3b(8dt%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "imisifedara.com.ng", "api.imisifedara.com.ng"]
 
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://imisifedara.com.ng', 'api.imisifedara.com.ng']
+CORS_ALLOWED_ORIGINS = ['https://api.imisifedara.com.ng']
 
 ROOT_URLCONF = 'imisi_proj.urls'
 
