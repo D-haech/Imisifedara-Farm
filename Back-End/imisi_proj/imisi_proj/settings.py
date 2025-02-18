@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = ['https://api.imisifedara.com.ng']
+CORS_ALLOWED_ORIGINS = ['https://api.imisifedara.com.ng', 'https://imisifedara.com.ng']
 
 ROOT_URLCONF = 'imisi_proj.urls'
 
