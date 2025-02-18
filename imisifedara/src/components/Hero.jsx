@@ -131,16 +131,19 @@ export function Footer() {
               read our full Privacy Policy and Terms of Service.
             </p>
           </Col>
-          
         </Row>
         <hr />
         <small>
           {" "}
           &copy;2024. All rights reserved. Developed by{" "}
           <a href="#" className="text-decoration-none text-dark">
-            Osarogie Igbinosa 
+            Osarogie Igbinosa
           </a>{" "}
-          and <a href="#" className="text-decoration-none text-dark"> Oluwasegun John Ayodeji </a>
+          and{" "}
+          <a href="#" className="text-decoration-none text-dark">
+            {" "}
+            Oluwasegun John Ayodeji{" "}
+          </a>
         </small>
       </Container>
     </>
@@ -208,6 +211,7 @@ export const ContactForm = () => {
   const [inputs, setInputs] = useState({});
   const [show, setShow] = useState(false);
   const [display, setDisplay] = useState(`none`);
+  const [isLoading, setIsLoading] = useState(true);
 
   function handleChange(event) {
     const name = event.target.name;
@@ -217,7 +221,8 @@ export const ContactForm = () => {
   }
 
   const sendMail = async () => {
-    const url = "https://imisifedara.onrender.com/api/imisifedara/send/mail"; 
+    setIsLoading(true);
+    const url = "https://imisifedara.onrender.com/api/imisifedara/send/mail";
 
     try {
       const response = await fetch(url, {
@@ -232,7 +237,7 @@ export const ContactForm = () => {
           message: inputs.message,
         }),
       });
-
+      setIsLoading(false);
       // Check if the response is okay
       if (response.ok) {
         const data = await response.json();
@@ -294,6 +299,7 @@ export const ContactForm = () => {
 
   return (
     <div className="w-50 m-auto my-3 p-4 tertiary border rounded contact">
+      {isLoading && (<h4>Sending...</h4>)}
       <div className="" style={{ display: `${display}` }}>
         {show ? (
           <Alert variant="danger">
