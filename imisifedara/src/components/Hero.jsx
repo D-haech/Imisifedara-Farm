@@ -211,7 +211,7 @@ export const ContactForm = () => {
   const [inputs, setInputs] = useState({});
   const [show, setShow] = useState(false);
   const [display, setDisplay] = useState(`none`);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   function handleChange(event) {
     const name = event.target.name;
