@@ -17,8 +17,8 @@ const Home = () => {
     document.title = `Imisifedara`;
   }, [getRef.current]);
   return (
-    <div className="cont">
-      <div className="row my-20">
+    <div className="cont ">
+      <div className="row ">
         <Hero></Hero>
       </div>
       <div className="row justify-content-between">
@@ -45,7 +45,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="row div3 mb-20">
+      <div className="row div3">
         <div className="col">
           <Description bgPic={pig} btnText={`Piglets`} />
         </div>

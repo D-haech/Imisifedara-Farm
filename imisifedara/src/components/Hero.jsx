@@ -222,7 +222,8 @@ export const ContactForm = () => {
 
   const sendMail = async () => {
     setIsLoading(true);
-    const url = "https://imisifedara.onrender.com/api/imisifedara/send/mail";
+    window.scroll(0,0);
+    const url = "https://api.imisifedara.com.ng/api/imisifedara/send/mail";
 
     try {
       const response = await fetch(url, {
@@ -237,7 +238,8 @@ export const ContactForm = () => {
           message: inputs.message,
         }),
       });
-      setIsLoading(false);
+     
+      
       // Check if the response is okay
       if (response.ok) {
         const data = await response.json();
@@ -245,6 +247,7 @@ export const ContactForm = () => {
         // Add UI feedback or further actions here
         /**   setShow(false);
         setDisplay(`block`);*/
+        
       } else {
         // Parse and log error details from the server response
         const errorData = await response.json();
@@ -252,6 +255,7 @@ export const ContactForm = () => {
         alert(`Error: ${errorData.message}`); // User-friendly feedback
       }
     } catch (error) {
+      setIsLoading(false);
       // Handle network or other unexpected errors
       console.error("An unexpected error occurred:", error);
       alert("An unexpected error occurred. Please try again.");
@@ -299,12 +303,11 @@ export const ContactForm = () => {
 
   return (
     <div className="w-50 m-auto my-3 p-4 tertiary border rounded contact">
-      {isLoading && (<h4>Sending...</h4>)}
+      {isLoading && (<p className="text-danger">Sending...</p>)}
       <div className="" style={{ display: `${display}` }}>
         {show ? (
           <Alert variant="danger">
-            <i className="bi bi-exclamation-triangle"></i> The form is not
-            properly filled
+            <i className="bi bi-exclamation-triangle"></i> The form could not be sent
           </Alert>
         ) : (
           <Alert variant="success">

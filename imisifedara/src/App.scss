@@ -61,11 +61,7 @@ $tertiary: #faf8f5;
   }
 }
 
-/**.pic-div {
-  width: 20rem;
-  //background-color: aqua;
-  //height: 15rem;
-}*/
+
 
 // display div
 .dis-div {
@@ -139,17 +135,27 @@ $tertiary: #faf8f5;
 
   @media (min-width: 667px) and (max-width: 768px) {
     width: 30%;
-    object-fit: contain;
+    //object-fit: contain;
+    box-sizing: border-box;
+    //background-color: red;
+    height: 20rem;
     .dis-div1 {
-      width: 10rem;
+      width: fit-content;
       font-size: 11px;
+      //background-color: red;
+      
+      h2{
+        font-size: 18px;
+      }
     }
     .pic-div {
       width: 7rem;
-      height: 9rem;
+      height: 8rem;
+      //background-color: yellow;
       .img {
-        width: 10rem;
-        margin-left: 0px !important;
+        width: 7rem;
+        margin: 0px !important;
+        
       }
     }
   }
@@ -245,7 +251,7 @@ $tertiary: #faf8f5;
 
   @media (min-width: 667px) and (max-width: 768px) {
     width: 100%;
-    margin-left: 30px;
+    
   }
 
   @media (min-width: 800px) and (max-width: 1025px) {
@@ -316,11 +322,16 @@ $tertiary: #faf8f5;
 .cont {
   background-color: darken($tertiary, 3%);
   @media (min-width: 375px) and (max-width: 414px) {
-    height: 120rem;
+    height: 63rem;
+    
   }
-
-  @media (min-width: 667px) and (max-width: 768px) {
-    height: 110rem;
+  @media (min-width: 720px) and (max-width: 768px) {
+    //background-color: red;
+    height:110rem ;
+  }
+  @media (min-width: 667px) and (max-width: 720px) {
+    height: 57rem;
+    //background-color: red;
   }
 
   @media (min-width: 250px) and (max-width: 370px) {
@@ -414,5 +425,9 @@ $tertiary: #faf8f5;
       margin-top: 5px;
       display: none;
     }
+  }
+
+  @media (min-width: 667px) and (max-width: 768px) {
+   margin-top: 15px;
   }
 }
