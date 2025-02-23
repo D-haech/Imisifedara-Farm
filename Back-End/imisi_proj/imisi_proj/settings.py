@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nn297&yp3lyrxgw*du@-9a@tlg#2im4g=g*_uog(0^z3b(8dt%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "imisifedara.com.ng", "api.imisifedara.com.ng"]
 
@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ["127.0.0.1", "imisifedara.com.ng", "api.imisifedara.com.ng"]
 # Application definition
 
 INSTALLED_APPS = [
-    # 'Farm',
     'rest_framework',
     'corsheaders',
     'django.contrib.admin',
@@ -126,9 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/assets/'
-STATICFILES_DIRS = [
-    BASE_DIR / "Farm"/"Templates"/ "Farm"/ "assets",  # Adjust this path as per your project structure
-]
+
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STORAGES = {
     # ...
