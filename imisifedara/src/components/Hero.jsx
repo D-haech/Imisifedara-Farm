@@ -86,7 +86,7 @@ export function Footer() {
                 className="text-white text-decoration-none link-opacity-75-hover"
               >
                 {" "}
-                Email: imisifedarafarms@gmail.com <br />
+                Email: info@imisifedara.com.ng <br />
               </a>
               <i className="bi bi-facebook"></i>{" "}
               <a
@@ -135,14 +135,9 @@ export function Footer() {
         <hr />
         <small>
           {" "}
-          &copy;2024. All rights reserved. Developed by{" "}
+          &copy;2022. All rights reserved. Developed by{" "}
           <a href="#" className="text-decoration-none text-dark">
-            Osarogie Igbinosa
-          </a>{" "}
-          and{" "}
-          <a href="#" className="text-decoration-none text-dark">
-            {" "}
-            Oluwasegun John Ayodeji{" "}
+           Osazuinco Enterprise
           </a>
         </small>
       </Container>
