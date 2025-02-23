@@ -136,7 +136,7 @@ export function Footer() {
         <small>
           {" "}
           &copy;2022. All rights reserved. Developed by{" "}
-          <a href="#" className="text-decoration-none text-dark">
+          <a href="https://portfolio-alpha-nine-12.vercel.app/" className="text-decoration-none text-dark">
            Osazuinco Enterprise
           </a>
         </small>
