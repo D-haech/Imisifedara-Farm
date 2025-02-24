@@ -139,10 +139,16 @@ STORAGES = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
+#Email authentication field
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'johnlenzvictor@gmail.com'
-EMAIL_HOST_PASSWORD = 'tpzvkagfkhqwgwvr'
-DEFAULT_FROM_EMAIL = 'johnlenzvictor@gmail.com'
+EMAIL_HOST = 'mail.imisifedara.com.ng'
+EMAIL_PORT = 465
+#EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'info@imisifedara.com.ng'
+EMAIL_HOST_PASSWORD = 'Admin5678'
+DEFAULT_FROM_EMAIL = 'info@imisifedara.com.ng'
+
