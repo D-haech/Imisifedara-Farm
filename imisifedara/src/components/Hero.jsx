@@ -271,6 +271,7 @@ export const ContactForm = () => {
     try {
       // Optionally, set a loading state here (if applicable)
       await sendMail(); // Wait for the email to be sent
+      setIsLoading(false);
       alert("Email sent successfully!"); // Provide feedback to the user
       setShow(false);
       setDisplay(`block`);
@@ -281,20 +282,7 @@ export const ContactForm = () => {
     }
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   sendMail();
-  //   // const formatString = ` Name: ${inputs.name}, \n Email: ${inputs.email}, \n Subject: ${inputs.subject}, \n Message: ${inputs.message}`;
-  //   //  const formatArray = [`Name:${inputs.name}`, `Email:${inputs.email}`, `Subject: ${inputs.subject}`, `Message: ${inputs.message}` ]
-  //   //   alert(formatArray.join('\n'));
-  //   // const changeToJson = JSON.stringify(inputs, null, 5);
-  //   //     if (!inputs.name || !inputs.email || !inputs.subject || !inputs.message){
-  //   //     setShow(true);
-  //   //  }
-  //   //  return changeToJson
-
-  //   //alert(changeToJson); // You can remove this alert when you finish with the back-end
-  // };
+  
 
   return (
     <div className="w-50 m-auto my-3 p-4 tertiary border rounded contact">
